@@ -74,34 +74,36 @@ function renderReport(r){
 
     <div class="ledger">
       <div class="ledger-title">Summary</div>
-      <table class="led">
-        <thead><tr><th>Particulars</th><th class="num">BDT</th><th class="num">EUR</th></tr></thead>
-        <tbody>
-          <tr class="total"><td>Total assets</td><td class="num">${fmt(r.totalAssetsBDT)}</td><td class="num">${fmt(r.totalAssetsEUR)}</td></tr>
-          <tr class="total"><td>Total annual income</td><td class="num">${fmt(r.totalIncomeBDT)}</td><td class="num">${fmt(r.totalIncomeEUR)}</td></tr>
-        </tbody>
-      </table>
-      <p class="privacy-note">Detailed breakdown of individual assets and income sources is withheld from this page for client privacy.</p>
-
-      <div class="stamp-row">
+      <div class="ledger-table-wrap">
+        <table class="led">
+          <thead><tr><th>Particulars</th><th class="num">BDT</th><th class="num">EUR</th></tr></thead>
+          <tbody>
+            <tr class="total"><td>Total assets</td><td class="num">${fmt(r.totalAssetsBDT)}</td><td class="num">${fmt(r.totalAssetsEUR)}</td></tr>
+            <tr class="total"><td>Total annual income</td><td class="num">${fmt(r.totalIncomeBDT)}</td><td class="num">${fmt(r.totalIncomeEUR)}</td></tr>
+          </tbody>
+        </table>
         <svg class="stamp" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
           <circle cx="60" cy="60" r="52" fill="none" stroke="#1F8A5C" stroke-width="2" stroke-dasharray="3 3.2"/>
           <circle cx="60" cy="60" r="43" fill="none" stroke="#1F8A5C" stroke-width="1.2"/>
-          <path id="arcTop" d="M 22 60 A 38 38 0 0 1 98 60" fill="none"/>
-          <text font-family="Inter, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2" fill="#1F8A5C">
+          <path id="arcTop" d="M 12 62 A 48 48 0 0 1 108 62" fill="none"/>
+          <text font-family="Inter, sans-serif" font-size="8" font-weight="700" letter-spacing="1" fill="#1F8A5C">
             <textPath href="#arcTop" startOffset="50%" text-anchor="middle">VERIFIED &amp; GENUINE</textPath>
           </text>
-          <polygon points="60,74 60,90 78,100" fill="#2E6FDB" transform="translate(-9,-38) scale(0.62)"/>
-          <polygon points="60,74 60,90 42,90" fill="#0A1440" transform="translate(-9,-38) scale(0.62)"/>
-          <polygon points="42,90 60,90 78,100" fill="#9AA3AE" transform="translate(-9,-38) scale(0.62)"/>
-          <text x="60" y="86" font-family="'JetBrains Mono', monospace" font-size="7" fill="#1F8A5C" text-anchor="middle">${r.reportDate}</text>
+          <g transform="translate(60,55) scale(0.85)">
+            <polygon points="0,-20 0,4 19,15" fill="#2E6FDB"/>
+            <polygon points="0,-20 0,4 -19,4" fill="#0A1440"/>
+            <polygon points="-19,4 0,4 19,15" fill="#9AA3AE"/>
+          </g>
+          <text x="60" y="88" font-family="'JetBrains Mono', monospace" font-size="7" fill="#1F8A5C" text-anchor="middle">${r.reportDate}</text>
         </svg>
       </div>
+      <p class="privacy-note">Detailed breakdown of individual assets and income sources is withheld from this page for client privacy.</p>
+    </div>
     </div>
 
     <div class="signoff">
-      <div class="fw">S Javed &amp; Co.</div>
-      <div class="role2">Chartered Accountants · Place: Dhaka, Bangladesh</div>
+      <div class="role2">This verification is generated automatically from our official records and requires no signature.</div>
+      <div class="role2 loc">Dhaka, Bangladesh</div>
     </div>
 
     <div class="foot">
