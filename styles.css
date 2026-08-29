@@ -33,7 +33,9 @@ a{color:var(--blue);}
 }
 .site-header svg, .site-header .brand-logo{width:30px;height:auto;flex-shrink:0;}
 .site-header .name{font-family:'Fraunces',serif;font-weight:600;font-size:17px;color:var(--navy);letter-spacing:-.01em;}
-.site-header .role{font-size:10.5px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;margin-top:2px;}
+.site-header .cred-line{font-variant:small-caps;font-size:12.5px;color:var(--muted);letter-spacing:.03em;margin-top:1px;}
+.site-header .role{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;margin-top:4px;}
+.site-header .role img{height:13px;width:auto;}
 
 /* ---------- Homepage ---------- */
 .home-wrap{max-width:560px;margin:0 auto;padding:70px 22px 60px;text-align:center;}
@@ -109,7 +111,7 @@ a{color:var(--blue);}
 .letterhead .brand{display:flex;align-items:center;gap:13px;}
 .letterhead svg, .letterhead .brand-logo{width:34px;height:auto;flex-shrink:0;}
 .letterhead .name{font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--navy);letter-spacing:-.01em;}
-.letterhead .role{font-size:11px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;margin-top:2px;}
+.letterhead .role{font-variant:small-caps;font-size:13px;color:var(--muted);letter-spacing:.03em;margin-top:2px;}
 .letterhead .ca{text-align:right;font-size:11px;color:var(--muted);line-height:1.7;font-family:'JetBrains Mono',monospace;padding-top:3px;}
 
 .vstrip{
