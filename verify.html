@@ -14,7 +14,7 @@
   <div class="sheet" id="sheet">
     <div class="state-msg" id="loadingMsg">
       <div class="t">Looking up report…</div>
-      <div class="d">Checking reference number against our records.</div>
+      <div class="d">Checking enrolment number against our records.</div>
     </div>
   </div>
 </div>
@@ -41,12 +41,12 @@ function renderNotFound(ref){
     <div class="vstrip bad">
       <div class="left">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.5" stroke="#B23B3B" stroke-width="1.8"/><path d="M9 9l6 6M15 9l-6 6" stroke="#B23B3B" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <div><div class="t">No matching report found</div><div class="s">This reference number is not in our records</div></div>
+        <div><div class="t">No matching report found</div><div class="s">This enrolment number is not in our records</div></div>
       </div>
       <div class="ref">${ref || '—'}</div>
     </div>
     <div class="state-msg">
-      <div class="t">We couldn't verify this reference number</div>
+      <div class="t">We couldn't verify this enrolment number</div>
       <div class="d">Double-check the number printed on the report, or contact our office directly if you believe this is an error.</div>
     </div>
   `;
