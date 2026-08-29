@@ -104,14 +104,6 @@ function renderReport(r){
       <div class="role2">Chartered Accountants · Place: Dhaka, Bangladesh</div>
     </div>
 
-    <details class="tech">
-      <summary>Technical verification details</summary>
-      <div class="tb">
-        Document hash (SHA-256) — unique to the exact file we issued. If a copy has been edited in any way, even a single figure, its hash will not match this one.
-        <div class="hash">${r.sha256}</div>
-      </div>
-    </details>
-
     <div class="foot">
       <p>Scanned from a QR code on a report issued by S Javed &amp; Co.<br>
       Questions about this report? <a href="mailto:${r.contactEmail}">Contact our office</a></p>
