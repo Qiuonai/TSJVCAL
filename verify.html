@@ -79,8 +79,8 @@ function renderReport(r){
         <table class="led">
           <thead><tr><th>Particulars</th><th class="num">BDT</th><th class="num">EUR</th></tr></thead>
           <tbody>
-            <tr class="total"><td>Total assets</td><td class="num">${fmt(r.totalAssetsBDT)}</td><td class="num">${fmt(r.totalAssetsEUR)}</td></tr>
-            <tr class="total"><td>Total annual income</td><td class="num">${fmt(r.totalIncomeBDT)}</td><td class="num">${fmt(r.totalIncomeEUR)}</td></tr>
+            <tr class="total"><td>Total assets</td><td class="num" data-label="BDT">${fmt(r.totalAssetsBDT)}</td><td class="num" data-label="EUR">${fmt(r.totalAssetsEUR)}</td></tr>
+            <tr class="total"><td>Total annual income</td><td class="num" data-label="BDT">${fmt(r.totalIncomeBDT)}</td><td class="num" data-label="EUR">${fmt(r.totalIncomeEUR)}</td></tr>
           </tbody>
         </table>
         <svg class="stamp" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
